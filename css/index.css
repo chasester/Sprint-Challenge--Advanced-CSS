@@ -189,6 +189,33 @@ a {
     display: none !important;
   }
 }
+.btn {
+  color: #F6F6F6;
+  background: #22283A;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  width: 30%;
+  padding: 2% 4%;
+}
+.btn:hover {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  -webkit-transition: filter 0.7s linear;
+  transition: filter 0.7s linear;
+}
+@media screen and (max-width: 900px) {
+  .btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .btn {
+    padding: 6% 8%;
+  }
+}
 header .nav-bar {
   display: flex;
   flex-direction: column;
