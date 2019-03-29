@@ -9,9 +9,9 @@ header
         {
             .flex(row, space-between);
             width: 450px;
-            transition: width 0.34s linear, opacity 1s linear;
+            transition: padding 0.34s linear, width 0.34s linear, opacity 1s linear;
             opacity: 1;
-            padding: 0 350px;
+            padding: 0 175px;
             box-sizing: content-box;
             a
             {
@@ -24,7 +24,7 @@ header
             }
             @media screen and @phone
             {
-                width: 100%;
+                width: 98%;
                 max-width: 400px;
                 padding: 0;
             }
@@ -33,6 +33,24 @@ header
         {
             margin: 3% 0;
         }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 750px;
+            padding: 0 25px;
+            opacity: 0.8;
+            @media screen and  @tablet 
+            {
+                width: 550px;
+                padding: 0 25px;
+            }
+            @media screen and @phone
+            {
+                width: 98%;
+                padding: 0 2%;
+            }
+          }
     }
     img
     {
@@ -41,22 +59,7 @@ header
     }
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 800px !important;
-    display: block;
-    padding: 1%;
-    opacity: 0.8 !important;
-    @media screen and  @tablet 
-    {
-        width: 600px !important;  
-    }
-    @media screen and @phone
-    {
-        width: 100% !important;
-    }
-  }
+
 
 
   #navbar {
