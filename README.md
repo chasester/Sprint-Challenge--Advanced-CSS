@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+	An adptive website is able to make scaling desicions based on percetage of the screen cover. This is not fully compatiable with all screen sizes or styles of screens (ie print, or speach). Where as a fully responsive website is scalable based on percentages but also can completely change layout or styling desicions based on specific screen size limits or styles (ei print, or speach).
 
 2. Describe what it means to be mobile first vs desktop first.
+	Mobile first means that you design your website as a mobile site to fit mobile screens first. Then you build up in screen sizes to make the tablet then desktop etc. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+	It sets 1 rem to be 10px so that rems math is easier to calculate. This is due to the default font-size being 16px so (100%/16px)*10px = 62.5%; (basic ratio formula).
 
 4. How would you describe preprocessing to someone new to CSS?
+	It is the ablity to build your code in many files and with custom styling desions and with macro like functionality (variables and mixins and maps etc). This allows for a quicker more uniform styling work-flow, that makes code more readable and easier to use and change on the fly due to customer needs.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+@@ handling, i understand it. Its just when you talk about double stacking handles its hard to keep track of which memory you are referencing.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
