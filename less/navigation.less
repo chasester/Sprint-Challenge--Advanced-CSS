@@ -8,18 +8,25 @@ header
         nav
         {
             .flex(row, space-between);
-            width: 50%;
+            width: 450px;
+            transition: width 0.34s linear, opacity 1s linear;
+            opacity: 1;
+            padding: 0 350px;
+            box-sizing: content-box;
             a
             {
-                font-weight: 800;                
+                font-weight: 800;  
             }
             @media screen and  @tablet 
             {
-                width: 60%    
+                width: 400px;
+                padding: 0 200px;
             }
             @media screen and @phone
             {
-                width: 80%    
+                width: 100%;
+                max-width: 400px;
+                padding: 0;
             }
         }
         h1
@@ -33,3 +40,26 @@ header
         width: 100%;
     }
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 800px !important;
+    display: block;
+    padding: 1%;
+    opacity: 0.8 !important;
+    @media screen and  @tablet 
+    {
+        width: 600px !important;  
+    }
+    @media screen and @phone
+    {
+        width: 100% !important;
+    }
+  }
+
+
+  #navbar {
+    overflow: hidden;
+    background-color: @nav-bg;
+  }

@@ -230,19 +230,26 @@ header .nav-bar nav {
   flex-wrap: no-wrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 50%;
+  width: 450px;
+  transition: width 0.34s linear, opacity 1s linear;
+  opacity: 1;
+  padding: 0 350px;
+  box-sizing: content-box;
 }
 header .nav-bar nav a {
   font-weight: 800;
 }
 @media screen and (max-width: 900px) {
   header .nav-bar nav {
-    width: 60%;
+    width: 400px;
+    padding: 0 200px;
   }
 }
 @media screen and (max-width: 650px) {
   header .nav-bar nav {
-    width: 80%;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
   }
 }
 header .nav-bar h1 {
@@ -251,6 +258,28 @@ header .nav-bar h1 {
 header img {
   margin: 2% 0;
   width: 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 800px !important;
+  display: block;
+  padding: 1%;
+  opacity: 0.8 !important;
+}
+@media screen and (max-width: 900px) {
+  .sticky {
+    width: 600px !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .sticky {
+    width: 100% !important;
+  }
+}
+#navbar {
+  overflow: hidden;
+  background-color: #F6F6F6;
 }
 footer {
   color: #22283B;
