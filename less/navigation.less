@@ -1,1 +1,35 @@
 // Navigation code here
+header
+{
+    .nav-bar
+    {
+        .flex(column, center, center);
+        color: @nav-font;
+        nav
+        {
+            .flex(row, space-between);
+            width: 50%;
+            a
+            {
+                font-weight: 800;                
+            }
+            @media screen and  @tablet 
+            {
+                width: 60%    
+            }
+            @media screen and @phone
+            {
+                width: 80%    
+            }
+        }
+        h1
+        {
+            margin: 3% 0;
+        }
+    }
+    img
+    {
+        margin: 2% 0;
+        width: 100%;
+    }
+}
