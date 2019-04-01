@@ -1,1 +1,68 @@
 // Navigation code here
+header
+{
+    .nav-bar
+    {
+        .flex(column, center, center);
+        color: @nav-font;
+        nav
+        {
+            .flex(row, space-between);
+            width: 450px;
+            transition: padding 0.34s linear, width 0.34s linear, opacity 1s linear;
+            opacity: 1;
+            padding: 0 175px;
+            box-sizing: content-box;
+            a
+            {
+                font-weight: 800;  
+            }
+            @media screen and  @tablet 
+            {
+                width: 400px;
+                padding: 0 200px;
+            }
+            @media screen and @phone
+            {
+                width: 98%;
+                max-width: 400px;
+                padding: 0;
+            }
+        }
+        h1
+        {
+            margin: 3% 0;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 750px;
+            padding: 0 25px;
+            opacity: 0.8;
+            @media screen and  @tablet 
+            {
+                width: 550px;
+                padding: 0 25px;
+            }
+            @media screen and @phone
+            {
+                width: 98%;
+                padding: 0 2%;
+            }
+          }
+    }
+    img
+    {
+        margin: 2% 0;
+        width: 100%;
+    }
+}
+
+
+
+
+  #navbar {
+    overflow: hidden;
+    background-color: @nav-bg;
+  }

@@ -1,1 +1,36 @@
 // Mixins Here
+.flex(@direction: row; @justify: flex-start; @align: flex-start; @wrap: no-wrap)
+{
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.filter(@type)
+{
+    -webkit-filter: @type;
+    filter: @type;
+}
+
+.transition(@type; @time; @decay)
+{
+    -webkit-transition: @type @time @decay;
+    transition: @type @time @decay;
+}
+
+//todo: add another mix in
+.button(@text-color: @btn-text-color; @background: @btn-bg-color)
+{
+    color: @text-color;
+    background: @background;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    .filter(grayscale(0%));
+    &:hover{
+        .filter(grayscale(80%));
+        .transition(filter; 0.7s; linear);
+    }
+}
